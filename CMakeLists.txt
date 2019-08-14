@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.14)
+﻿cmake_minimum_required(VERSION 3.14)
 project(PyTunnel VERSION 1.0.0)
 
 if(NOT EXISTS "${CMAKE_BINARY_DIR}/conan.cmake")
@@ -8,7 +8,7 @@ if(NOT EXISTS "${CMAKE_BINARY_DIR}/conan.cmake")
 endif()
 
 include(${CMAKE_BINARY_DIR}/conan.cmake)
-conan_cmake_run(REQUIRES Boost/1.70.0@shining3d/stable
+conan_cmake_run(CONANFILE conanfile.txt
     BASIC_SETUP CMAKE_TARGETS
     BUILD_TYPE None
     BUILD never)

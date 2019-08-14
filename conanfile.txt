@@ -1,0 +1,9 @@
+[generators]
+cmake
+
+[requires]
+Boost/1.70.0@shining3d/stable
+
+[options]
+
+[imports]
