@@ -10,7 +10,6 @@ endif()
 include(${CMAKE_BINARY_DIR}/conan.cmake)
 conan_cmake_run(CONANFILE conanfile.txt
     BASIC_SETUP CMAKE_TARGETS
-    BUILD_TYPE None
     BUILD never)
 
 set(Boost_USE_STATIC_LIBS ON)
